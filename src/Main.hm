@@ -1,0 +1,10 @@
+module Main where
+
+import Prelude
+import Server as Server
+
+main :: IO ()
+main = do
+  _ <- Server.start
+  _ <- Server.query
+  pure ()
